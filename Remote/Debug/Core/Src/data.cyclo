@@ -1,0 +1,7 @@
+../Core/Src/data.c:10:6:Window_Filter	2
+../Core/Src/data.c:47:6:Mid_Offset	5
+../Core/Src/data.c:87:6:Limit	1
+../Core/Src/data.c:102:6:Mid_Limit	9
+../Core/Src/data.c:125:6:KeyPress	5
+../Core/Src/data.c:146:6:RemoteData	2
+../Core/Src/data.c:201:6:Stick_Scan	1

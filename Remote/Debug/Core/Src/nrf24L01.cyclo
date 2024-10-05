@@ -1,0 +1,11 @@
+../Core/Src/nrf24L01.c:14:9:SPIx_ReadWriteByte	2
+../Core/Src/nrf24L01.c:30:9:NRF24L01_Check	4
+../Core/Src/nrf24L01.c:49:9:NRF24L01_Write_Reg	1
+../Core/Src/nrf24L01.c:66:9:NRF24L01_Read_Reg	1
+../Core/Src/nrf24L01.c:83:9:NRF24L01_Read_Buf	2
+../Core/Src/nrf24L01.c:104:9:NRF24L01_Write_Buf	2
+../Core/Src/nrf24L01.c:124:9:NRF24L01_TxPacket	4
+../Core/Src/nrf24L01.c:154:9:NRF24L01_RxPacket	2
+../Core/Src/nrf24L01.c:175:6:NRF24L01_RX_Mode	1
+../Core/Src/nrf24L01.c:196:6:NRF24L01_TX_Mode	1
+../Core/Src/nrf24L01.c:218:6:NRF_LowPower_Mode	1

@@ -1,0 +1,7 @@
+../Core/Src/data.c:10:6:Window_Filter	16	static
+../Core/Src/data.c:47:6:Mid_Offset	16	static
+../Core/Src/data.c:87:6:Limit	16	static
+../Core/Src/data.c:102:6:Mid_Limit	16	static
+../Core/Src/data.c:125:6:KeyPress	8	static
+../Core/Src/data.c:146:6:RemoteData	24	static
+../Core/Src/data.c:201:6:Stick_Scan	8	static
