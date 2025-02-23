@@ -123,22 +123,11 @@ void MPU6050_Read_Result(void){
 	roll_g = roll + Gx * 0.005;
 	pitch_g = pitch + Gy * 0.005;
 
-	//进行互补融合,这是铁头山羊的融合方式
-	//const float alpha = 0.95238;
-	//yaw = yaw_g;
-	//roll = alpha *roll_g +(1 - alpha) * roll_a;
-	//pitch = alpha *pitch_g +(1 - alpha) *pitch_a;
-
-	//这是CSDN上的融合方式。
-/*https://blog.csdn.net/hbsyaaa/article/details108186892?fromshare=blogdetail&sharetype=blogdetail&sharerId=108186892&sharerefer=PC&sharesource=m0_70625833&sharefrom=from_link*/
-	const float alpha = 0.9;//这个0.9可以改，0-1之间的数，自己改改玩玩
+	//进行互补融合
+	const float alpha = 0.98;//这个0.9可以改，0-1之间的数，一般在0.95往上，一次增加0.01调试一下
 	roll = roll + (roll_a - roll_g ) *alpha;
 	pitch = pitch + (pitch_a - pitch_g) *alpha;
 	yaw = yaw_g;
-	/*MPU6050的偏航角yaw是不正常的，
-	即使静止不动也会跳动。使用时注意不要和电机靠太近，磁场很容易受到干扰*/
-
-	//用STM32C8T6少计算太多浮点数，计算太慢了
 }
 
 
